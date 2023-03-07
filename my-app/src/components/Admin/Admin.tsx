@@ -3,6 +3,7 @@ import { BookList } from '../BooksList/BooksList';
 import { SearchForm } from '../SearchForm/SearchForm';
 import Slider from '../Slider/Slider';
 import classes from './Admin.module.css';
+import {Ads} from '../../components/Ads/Ads';
 
 export const Admin = (): JSX.Element => {
 	const [height, setHeight] = useState(0);
@@ -25,6 +26,7 @@ export const Admin = (): JSX.Element => {
 					<SearchForm height={height} />
 				</div>
 			</header>
+			<Ads dataAdSlot='X7XXXXXX5X'/>
 			<BookList/>
 		</div>
 
